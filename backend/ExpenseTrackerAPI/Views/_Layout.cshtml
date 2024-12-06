@@ -1,0 +1,10 @@
+
+@if (ViewBag.Notifications != null && ((List<string>)ViewBag.Notifications).Count > 0)
+{
+<div class="alert alert-info">
+    @foreach (var notification in (List<string>)ViewBag.Notifications)
+        {
+    <p>@notification</p>
+        }
+</div>
+}

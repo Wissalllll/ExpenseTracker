@@ -1,0 +1,15 @@
+@model ExpenseTracker.Models.Expense
+
+<h1>Delete Expense</h1>
+
+<p>Are you sure you want to delete this expense?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    @Html.HiddenFor(m => m.Id)
+    <p>Category: @Model.Category</p>
+    <p>Amount: @Model.Amount</p>
+    <p>Date: @Model.Date.ToShortDateString()</p>
+    <p>Description: @Model.Description</p>
+    <button type="submit">Delete</button>
+    <a href="@Url.Action("Index", "Expenses")">Cancel</a>
+</form>

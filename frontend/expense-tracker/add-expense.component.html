@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Ajouter une Dépense</h2>
+    <form (ngSubmit)="onSubmit()" #expenseForm="ngForm">
+      <mat-form-field>
+        <input matInput placeholder="Catégorie" [(ngModel)]="expense.category" name="category" required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput placeholder="Montant" type="number" [(ngModel)]="expense.amount" name="amount" required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput placeholder="Date" type="date" [(ngModel)]="expense.date" name="date" required>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Ajouter</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ExpenseTrackerAPI",
+    "\\ExpenseTrackerAPI\\bin",
+    "\\ExpenseTrackerAPI\\Controllers",
+    "\\ExpenseTrackerAPI\\Models",
+    "\\ExpenseTrackerAPI\\Services",
+    "\\ExpenseTrackerAPI\\Views"
+  ],
+  "SelectedNode": "\\ExpenseTrackerAPI\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
